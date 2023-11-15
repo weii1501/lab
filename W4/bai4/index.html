@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <form action="" id="form" class="form">
+        <h1 class="title">
+            Tính chỉ số BMI
+        </h1>
+        <div class="form-body">
+            <div class="form-field">
+                <div class="form-field-group">
+                    <label for="data-weight">Nhập cân nặng?</label> 
+                    <br>
+                    <input type="number" id="data-weight" required>
+                </div>
+                <div class="form-field-group">
+                    <label for="data-height">Nhập chiều cao</label> 
+                    <br>
+                    <input type="text" id="data-height" required>
+                </div>
+                <div class="form-field-group">
+                    <label for="data-age-type">Chọn loại tuổi?</label> 
+                    <br>
+                    <select name="age-type" id="data-age-type" required>
+                        <option value="Trung niên">Trung niên</option>
+                        <option value="Trung niên, Già lớn tuổi">Trung niên, Già lớn tuổi</option>
+                        <option value="Già, lớn tuổi">Già, lớn tuổi</option>
+                    </select>
+                </div>
+
+                <div class="form-action">
+                    <button class="form-action-btn" type="submit">
+                        Tính BMI
+                    </button>
+                </div>
+
+                <div class="result">
+                    
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+        const form = document.getElementById('form');
+        function calculateBMI(weight, height) {
+            const bmi = parseFloat(weight) / (parseFloat(height) * parseFloat(height));
+            return bmi;
+        }
+        var data = {
+            weight: 0,
+            height: "",
+            ageType: "",
+            bmi: 0,
+            level: '',
+            advice: ''
+        }
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            data.weight = document.getElementById('data-weight');
+            data.height = document.getElementById('data-height');
+            data.ageType = document.getElementById('data-age-type');
+            data.bmi = calculateBMI(data.weight.value, data.height.value).toFixed(2);
+            data.ageType = data.ageType.value;
+            if (data.bmi < 18.5) {
+                data.level = "Dưới chuẩn";
+            } else if (data.bmi >= 18.5 && data.bmi <= 24.9) {
+                data.level = "Bình thường";
+            } else if (data.bmi >= 25 && data.bmi <= 29.9) {
+                data.level = "Thừa cân";
+            } else if (data.bmi >= 30 && data.bmi <= 34.9) {
+                data.level = "Béo phì cấp độ 1";
+            } else if (data.bmi >= 35 && data.bmi <= 39.9) {
+                data.level = "Béo phì cấp độ 2";
+            } else if (data.bmi >= 40) {
+                data.level = "Béo phì cấp độ 3";
+            }
+
+            if (data.level === "Béo phì cấp độ 1" || data.level === "Béo phì cấp độ 2" || data.level === "Béo phì cấp độ 3") {
+                if (data.ageType === "Trung niên") {
+                    data.advice = "Khám định kỳ"
+                } else if (data.advice === "Trung niên, Già lớn tuổi") {
+                    data.advice = "Tập thể dục thường xuyên"
+                } else if (data.ageType === "Già, lớn tuổi") {
+                    data.advice = "Hạn chế ăn mỡ động vật"
+                }
+            }
+
+            let result = document.querySelector('.result');
+            result.innerHTML = `
+                <p class="result-title">
+                    KẾT QUẢ
+                </p>
+                <p class="result-bmi">
+                    ${data.bmi}
+                </p>
+                <p class="result-level">
+                    ${data.level}
+                </p>
+                <p class="result-advice">
+                    ${data.advice}
+                </p>
+            `
+        })
+    </script>
+</body>
+</html>

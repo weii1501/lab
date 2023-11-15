@@ -1,0 +1,242 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./images/co-vietnam.png);
+    background-repeat: no-repeat;
+    background-position-x: calc(50% + 150px);
+    background-position-y: calc(50% + 63px);
+    background-attachment: fixed;
+}
+
+.site-header {
+    background-image: url(../images/nen-hoa-co.jpg);
+    height: 129px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.header-title {
+    color: #FFFFFF;
+    background: transparent;
+    text-shadow: 1px 3px 0 #9b7bfb, 1px 13px 5px #aba8a8;
+}
+
+.site-sidebar {
+    background-image: url(../images/nen-hoa-muc-luc.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #8ff225;
+    background-position-y: 59%;
+    margin-top: 129px;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+.site-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: transparent;
+    background-image: url(../images/nen-menu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 445px;
+    text-align: center;
+    padding-top: 64px;
+}
+
+.site-sidebar ul li {
+    padding-bottom: 6px;
+}
+
+.site-sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.content {
+    margin-top: 129px;
+    margin-left: 300px;
+    padding: 10px;
+
+}
+
+p {
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-3 {
+    width: 33%;
+    padding-left: 0;
+    padding-right: 4px;
+    border-right: 1px dashed #ccc;
+}
+
+.first-section {
+    width: 100%;
+    height: auto;
+}
+
+.first-section-title {
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.first-section-content {
+    display: flex;
+    flex-basis: 20px;
+}
+
+.first-section-content-left {
+    margin-right: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.first-section-content-left img {
+    width: 100%;
+    object-fit: contain;
+    max-width: 240px;
+}
+
+.first-section-content-right ul {
+    margin-bottom: 16px;
+}
+
+.first-section-content-right img {
+    width: 100%;
+    object-fit: contain;
+    max-width: 300px;
+}
+
+.go-top {
+    text-align: right;
+}
+
+.second-section {
+    width: 100%;
+    height: auto;
+}
+
+.second-section-title {
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    background-color: red;
+    padding: 4px 8px;
+}
+
+.second-section-content {
+    display: flex;
+    flex-basis: 20px;}
+
+.second-section-content-left {
+    height: 100%;
+    width: 100%;
+}
+
+.second-section-content-left img {
+    width: 100%;
+    object-fit: contain;
+    width: 400px;
+    margin-right: 20px;
+}
+.fourth-section span.first-letter,
+.second-section-content-right span.first-letter {
+    font-size: 72px; 
+    line-height: 1;
+    align-self: flex-end;
+    float: left;
+}
+
+.thirst-section {
+    width: 100%;
+    height: auto;
+}
+
+.thirst-section-title {
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    background-color: purple;
+    padding: 4px 8px;
+}
+
+.thirst-section-content-img {
+    text-align: center;
+}
+
+.thirst-section-content-img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.thirst-section-content-img p {
+    margin: 10px 0;
+    font-weight: bold;
+    font-style: italic;
+    object-fit: contain;
+}
+
+
+.fourth-section-title {
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    background-color: #ff00cd;
+    padding: 4px 8px;
+}
+
+.section-4-img {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.section-4-img img {
+    width: 100%;
+    object-fit: contain;
+}

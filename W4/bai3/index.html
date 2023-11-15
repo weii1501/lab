@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1 class="title">Liên hệ</h1>
+    <div class="container">
+        <div class="left-side">
+            <p class="left-side-title">
+                Thông tin 
+            </p>
+            <p class="left-side-info">
+                <i class="fa-solid fa-location-dot"></i>
+                Kp. 6, P. Linh Trung, Q. Thủ Đức, TP. HCM
+            </p>
+            <p class="left-side-info">
+                <i class="fa-regular fa-envelope"></i>
+                info@uit.edu.vn
+            </p>
+            <p class="left-side-info">
+                <i class="fa-solid fa-phone"></i>
+                +84 28 372 52 353
+            </p>
+        </div>
+
+        <div class="right-side">
+            <p class="right-side-title">
+                Hãy liên lạc với chúng tôi bất cứ khi nào!!!
+            </p>
+            <form action="" class="form">
+                <input type="text" id="form-name" placeholder="Họ và tên">
+                <input type="text" id="form-email" placeholder="Địa chỉ e-mail">
+                <input type="text" id="form-title" placeholder="Tiêu đề bài viết">
+                <textarea name="" id="form-content" cols="30" rows="10" placeholder="Nội dung"></textarea>
+                <button class="btn" type="submit">
+                    gửi tin nhắn 
+                    <i class="fa-regular fa-circle-check"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script>
+        const form = document.querySelector('.form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault(); // ngăn chặn hành vi mặc định của form
+            let data = {
+                name: document.getElementById('form-name'),
+                email: document.getElementById('form-email'),
+                title: document.getElementById('form-title'),
+                content: document.getElementById('form-content')
+            }
+
+            let text = `
+                Họ và tên: ${data.name.value}
+                Địa chỉ e-mail: ${data.email.value}
+                Tiêu đề bài viết: ${data.title.value}
+                Nội dung: ${data.content.value}
+            `
+
+            alert(text)
+        })
+    </script>
+</body>
+</html>

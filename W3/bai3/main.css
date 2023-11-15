@@ -1,0 +1,78 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+.title {
+    text-align: center;
+    color: #0317e1;
+    margin-bottom: 12px;
+}
+
+table, tr, td {
+    width: 700px;
+    border-collapse: collapse;
+    border: 1px solid #0317e1;
+    color: #0317e1;
+    font-size: 14px;
+    background-color: #ffffcd;
+}
+
+td {
+    padding: 8px;
+}
+
+input {
+    margin-right: 8px;
+}
+
+input[name="name"] {
+    width: 400px;
+    padding: 2px;
+}
+
+input[name="phone"] {
+    width: 200px;
+    padding: 2px;
+}
+
+.passengers {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 500px;
+    border: 1px solid #0317e1;
+}
+
+.num-title {
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    font-size: 12px;
+    font-weight: 100;
+    background-color: #ffffcd;
+    padding: 0 4px;
+}
+
+label[for="adult"], label[for="child"] {
+    font-weight: 100;
+}
+
+button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: red;
+}   

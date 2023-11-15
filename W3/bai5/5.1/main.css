@@ -1,0 +1,51 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-header {
+    background-image: url(../images/nen-hoa-co.jpg);
+    height: 129px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.header-title {
+    color: #FFFFFF;
+    background: transparent;
+    text-shadow: 1px 3px 0 #9b7bfb, 1px 13px 5px #aba8a8;
+}
+
+.site-sidebar {
+    background-image: url(../images/mucluc.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 129px;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+.content {
+    margin-top: 129px;
+    margin-left: 300px;
+    padding: 10px;
+    
+}
+

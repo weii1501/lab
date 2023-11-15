@@ -1,0 +1,134 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    padding: 10px 100px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #FFFFFF;
+    background: #FFFFFF;
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+    margin-bottom: 20px;
+}
+
+.form {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #cdffff;
+    box-shadow: 10px 10px 5px 0px rgba(121,122,255,0.75);
+    background-image: url(./images/khuyen-mai.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.col-4 {
+    width: 40%;
+    padding: 0 10px;
+}
+
+.col-6 {
+    width: 60%;
+    padding: 0 10px;
+}
+
+.col-4 {
+    text-align: right;
+}
+
+.col-4 label, .col-6 label {
+    color: #0f3dbc;
+    font-weight: bold;
+}
+
+.col-6 input[name="name"] { 
+    width: 70%;
+    padding: 5px;
+    border: 1px dashed #0f3dbc;
+    border-radius: 20px;
+    outline: none;
+    background-color: #a1ccfd;
+}
+
+.col-6 input[name="phone"] {
+    width: 40%;
+    padding: 5px;
+    border: 1px dashed #0f3dbc;
+    border-radius: 20px;
+    outline: none;
+    background-color: #a1ccfd;
+}
+
+.col-6 textarea[name="address"] {
+    padding: 5px;
+    border: 1px dashed #0f3dbc;
+    border-radius: 10px;
+    outline: none;
+    background-color: #a1ccfd;
+}
+
+.col-6 select[name="career"] {
+    width: 120px;
+    padding: 5px;
+    border: 1px dashed #0f3dbc;
+    border-radius: 20px;
+    outline: none;
+    background-color: #a1ccfd;
+}
+
+.col-6 select[name="product"] {
+    width: 200px;
+    padding: 5px 10px;
+    border: 1px dashed #0f3dbc;
+    border-radius: 10px;
+    outline: none;
+    background-color: #a1ccfd;
+    overflow: scroll;
+}
+
+.col-6 input[name="number"] {
+    width: 170px;
+    padding: 5px;
+    border: 1px dashed #0f3dbc;
+    border-radius: 20px;
+    outline: none;
+    background-color: #a1ccfd;
+}
+
+.btn {
+    padding: 4px 25px;
+    background: linear-gradient(180deg, hsla(224, 85%, 40%, 1) 14%, hsla(212, 96%, 81%, 1) 88%);
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+}
+
+.noti {
+    color: #e75bf2;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+}
+

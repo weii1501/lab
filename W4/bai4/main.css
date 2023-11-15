@@ -1,0 +1,89 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(90deg, rgb(151, 180, 132) 0%, rgb(45, 79, 140) 100%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    max-width: 800px;
+    min-height: 100vh;
+}
+
+.form {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 400px;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: #4169e2;
+    color: #fff !important;
+}
+
+.form-body {
+    padding: 15px;
+    background: #fff;
+}
+
+.form-field-group {
+    margin-bottom: 15px;
+}
+
+.form-field-group input, .form-field-group select, .form-field-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-action {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.form-action-btn {
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #01bffe;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.result {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.result-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+}
+
+.result-bmi {
+    color: #2f31d6;
+    font-size: 24px;
+}
+
+.result-level{
+    color: #d91510;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.result-advice {
+    color: #d91510;
+    font-weight: 600;
+}

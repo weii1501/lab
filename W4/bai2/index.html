@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <h1 class="title">ĐÓNG GÓP Ý KIẾN VỀ SẢN PHẨM</h1>
+    <p class="description">
+        Góp ý của bạn sẽ được chúng tôi xem xét, vui lòng nhập tiếng việt có dấu <br> Các ý kiến đóng nến viết chi tiết rõ ràng, kèm theo các minh chứng thời gian và điạ điểm <i>(nếu có)</i>
+    </p>
+    <div class="container">
+        <form action="" class="form" id="form">
+            <div class="form-row">
+                <input class="form-field" type="text" id="form-name" placeholder="Họ và tên">
+                <input class="form-field" type="text" id="form-code" placeholder="Mã thẻ">
+            </div>
+
+            <div class="form-row">
+                <input class="form-field" type="text" id="form-phone" placeholder="Số điện thoại">
+                <input class="form-field" type="text" id="form-email" placeholder="E-mail">
+            </div>
+
+            <div class="form-row">
+                <select name="customer" id="customer" class="form-field" aria-placeholder="Chọn loại khách hàng">
+                    <option value="null">Chọn loại khách hàng</option>
+                    <option value="saab">VVIP</option>
+                </select>
+                <input class="form-field" type="text" id="form-code-reicept" placeholder="Mã hóa đơn">
+            </div>
+
+            <div class="form-row">
+                <textarea class="form-field" name="desc" id="form-desc" cols="30" rows="10" placeholder="Nhập chi tiết mô tả"></textarea>
+            </div>
+
+            <div class="">
+                <button type="submit" class="btn">
+                    GỬI GÓP Ý
+                </button>
+            </div> 
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let data = {
+                name: document.getElementById('form-name').value,
+                code: document.getElementById('form-code').value,
+                phone: document.getElementById('form-phone').value,
+                email: document.getElementById('form-email').value,
+                customer: document.getElementById('customer').value,
+                codeReicept: document.getElementById('form-code-reicept').value,
+                desc: document.getElementById('form-desc').value,
+            }
+
+            let string = `
+                Họ và tên: ${data.name} 
+                Mã thẻ: ${data.code}
+                Số điện thoại: ${data.phone}
+                E-mail: ${data.email}
+                Loại khách hàng: ${data.customer}
+                Mã hóa đơn: ${data.codeReicept}
+                Mô tả: ${data.desc}
+            `
+            alert(string);
+        })
+    </script>
+</body>
+</html>

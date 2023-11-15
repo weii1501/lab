@@ -1,0 +1,105 @@
+* {
+    /* margin: 0 auto; */
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-header {
+    background-image: url(../images/nen-hoa-co.jpg);
+    height: 129px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.header-title {
+    color: #FFFFFF;
+    background: transparent;
+    text-shadow: 1px 3px 0 #9b7bfb, 1px 13px 5px #aba8a8;
+}
+
+.site-sidebar {
+    background-image: url(../images/nen-hoa-muc-luc.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #8ff225;
+    background-position-y: 59%;
+    margin-top: 129px;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+.site-sidebar ul {
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.site-sidebar ul li {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: url(../images/nen-lien-ket-muc-luc.png);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+
+.site-sidebar ul li.active {
+    background-image: url(../images/nen-lien-ket-muc-luc-over.png);
+}
+
+.site-sidebar ul li a {
+    color: #FFFFFF;
+    background: transparent;
+    font-weight: bold;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+}
+
+.site-sidebar ul li.active a {
+    color: #ff99fe;
+}
+
+.site-sidebar ul li.active .list-style {
+    background-color: #ff99fe;
+}
+
+.list-style {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    margin: 0;
+    border-radius: 100%;
+    margin-right: 4px;
+}
+
+.content {
+    margin-top: 129px;
+    margin-left: 300px;
+    padding: 10px;   
+}
+

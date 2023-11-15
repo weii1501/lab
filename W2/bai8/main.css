@@ -1,0 +1,169 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-3 {
+    width: 33%;
+    padding-left: 0;
+    padding-right: 4px;
+    border-right: 1px dashed #ccc;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+    padding: 20px;
+    max-width: 1200px;
+    background-image: url(./images/co-vietnam.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.first-section {
+    width: 100%;
+    height: auto;
+}
+
+.first-section-title {
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.first-section-content {
+    display: flex;
+    flex-basis: 20px;
+}
+
+.first-section-content-left {
+    margin-right: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.first-section-content-left img {
+    width: 100%;
+    object-fit: contain;
+    max-width: 240px;
+}
+
+.first-section-content-right ul {
+    margin-bottom: 16px;
+}
+
+.first-section-content-right img {
+    width: 100%;
+    object-fit: contain;
+    max-width: 300px;
+}
+
+.go-top {
+    text-align: right;
+}
+
+.second-section {
+    width: 100%;
+    height: auto;
+}
+
+.second-section-title {
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    background-color: red;
+    padding: 4px 8px;
+}
+
+.second-section-content {
+    display: flex;
+    flex-basis: 20px;}
+
+.second-section-content-left {
+    height: 100%;
+    width: 100%;
+}
+
+.second-section-content-left img {
+    width: 100%;
+    object-fit: contain;
+    width: 400px;
+    margin-right: 20px;
+}
+.fourth-section span.first-letter,
+.second-section-content-right span.first-letter {
+    font-size: 72px; 
+    line-height: 1;
+    align-self: flex-end;
+    float: left;
+}
+
+.thirst-section {
+    width: 100%;
+    height: auto;
+}
+
+.thirst-section-title {
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    background-color: purple;
+    padding: 4px 8px;
+}
+
+.thirst-section-content-img {
+    text-align: center;
+}
+
+.thirst-section-content-img p {
+    margin: 10px 0;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.fourth-section-title {
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    background-color: #ff00cd;
+    padding: 4px 8px;
+}
+
+.section-4-img {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.section-4-img img {
+    width: 100%;
+    object-fit: contain;
+}

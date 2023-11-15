@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width   , initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="js-valueA" /><br />
+    <input type="text" id="js-valueB" /><br />
+    <button onclick="giaiPt()">Giai phuong trinh</button>
+    <p class="js-showResults"></p>
+  </body>
+  <script>
+    function giaiPt() {
+      const a = document.getElementById("js-valueA").value;
+      const b = document.getElementById("js-valueB").value;
+      const results = document.querySelector(".js-showResults");
+      if (a === 0) {
+        if (b === 0) {
+          results.innerHTML = ` <p> Kết quả <br />
+           Phương trình có vô số nghiệm </p>`;
+        } else {
+          results.innerHTML = `<p> Kết quả <br />
+          Phương trình vô nghiệm </p>`;
+        }
+      } else {
+        let x = -b / a;
+        results.innerHTML = `<p> Kết quả <br />
+         Nghiệm của phương trình là x = ${x} </p> `;
+      }
+    }
+  </script>
+</html>

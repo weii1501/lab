@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #fefefe;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 2px dotted red;
+    width: 50%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form {
+    background-color: #fefefe;
+    background-image: url(./img/login.jpg);
+    background-repeat: no-repeat;
+    min-height: 200px;
+    background-size: contain;
+    background-position: right;
+}
+
+.form-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.form-group-left {
+    text-align: right;
+    width: 40%;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+.form-group-right {
+    width: 60%;
+    text-align: left;
+}
+
+.form-group-right input {
+    width: 70%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: rgba(200,6,1,0.1);
+    padding: 8px;
+    border: 2px dotted #c80601;
+    border-radius: 50px;
+    outline: none;
+}
+
+.btn-login {
+    color: #fefefe;
+    background-color: #c80601;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
